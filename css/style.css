@@ -1,0 +1,52 @@
+body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .rotate {
+            width: 250px; /* 可以根据需要调整图片大小 */
+            height: 250px; /* 可以根据需要调整图片大小 */
+            animation: rotateImage 15s linear infinite reverse;
+			margin-top: -70px; /* 根据需要调整移动距离 */
+        }
+
+        .star {
+            width: 50px; /* 可以根据需要调整图片大小 */
+            height: 50px; /* 可以根据需要调整图片大小 */
+            
+			margin-top: 80px; /* 根据需要调整移动距离 */
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text-container {
+            position: absolute;
+            bottom: 16%; /* 向下移动 */
+            text-align: center;
+            color: white;
+            font-size: 21px; /* 缩小字体大小 */
+			font-family: 'Ranga';
+        }
+		
+		.text-container2 {
+            position: absolute;
+            bottom: 35%; /* 向下移动 */
+            text-align: center;
+            color: white;
+            font-size: 19px; /* 缩小字体大小 */
+			font-family: 'Ranga';
+        }
+		
